@@ -1,0 +1,9 @@
+    body{
+    background-image:url('https://ak1.ostkcdn.com/images/products//bmmg/books/L9781441316622.JPG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    }
+    #status{
+    color: yellow;
+    }

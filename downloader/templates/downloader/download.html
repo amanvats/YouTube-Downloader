@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/download.css' %}">
+		<title>YouTube Downloader</title>
+		<script>
+		    function myFunction()
+		    {
+		    window.alert("Click Here To Start Downloading.You need to wait while it gets downloaded");
+		    }
+        </script>
+	</head>
+	<body>
+		<div id="form">
+		<div id="line">Link of the YouTube Video</div>
+            <form method="POST" class="post-form">{% csrf_token %}
+				<div id ="temp"> '{{ form }} </div>
+					<button type="submit" class="save btn btn-default" onclick="myFunction()">Download</button>
+            </form>
+		</div>
+			<footer><a href="https://github.com/amanvats">Aman Vats Production</a></footer>
+
+	</body>
+</html>
